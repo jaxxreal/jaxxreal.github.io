@@ -688,6 +688,23 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.generic-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #343434;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 15px;
+}
+.hover-animation {
+  transition: opacity .2s;
+}
+.hover-animation:hover {
+  opacity: .7;
+}
+.hover-animation:active {
+  transition: none;
+  opacity: 1;
+}
 .btn {
   display: inline-block;
   height: 50px;
@@ -965,6 +982,20 @@
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
+}
+.icon-btn-twitter {
+  width: 43px;
+  height: 34px;
+  fill: #5fa9dd;
+}
+.icon-btn-facebook {
+  width: 38px;
+  height: 38px;
+  fill: #3b5998;
+}
+.icon-btn-instagram {
+  width: 39px;
+  height: 39px;
 }
 .text-field {
   position: relative;
@@ -1997,6 +2028,12 @@ input[type=text]::-ms-clear {
   padding-right: 20px;
   margin-top: 18px;
 }
+.dispensary-details_page {
+  background: white;
+  border: none;
+  padding-left: 32px;
+  padding-right: 48px;
+}
 .dispensary-details:before {
   content: '';
   background: url('../assets/icons/medium-chevron-right.svg') no-repeat;
@@ -2025,6 +2062,23 @@ input[type=text]::-ms-clear {
 }
 .dispensary-details__status_inactive {
   background: #D8D8D8;
+}
+.dispensary-details__status_inline {
+  position: relative;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  top: inherit;
+  left: 0;
+}
+.dispensary-details__status_text {
+  background: none;
+  color: #f0266a;
+  font-size: 11px;
+  padding: 0;
+}
+.dispensary-details__statuses {
+  margin-bottom: 16px;
 }
 .dispensary-details__title {
   margin: 0;
@@ -2069,6 +2123,48 @@ input[type=text]::-ms-clear {
 .dispensary-details__info {
   font-size: 11px;
   font-weight: 700;
+}
+.dispensary-details__description {
+  margin-top: 41.5px;
+  padding: 0 55px;
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+.dispensary-details__description-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #343434;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.dispensary-details__description-text {
+  font-size: 16px;
+  line-height: 1.3em;
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 35px;
+  color: #343434;
+}
+.dispensary-details__description-read-more {
+  color: #40bccf;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  cursor: pointer;
+  transition: color .3s;
+  padding-left: 5px;
+}
+.dispensary-details__description-read-more:hover {
+  color: #46CEE4;
+}
+.dispensary-details__description-read-more:active {
+  transition: none;
+  color: #39ABBD;
 }
 .weights {
   width: 100%;
@@ -2349,6 +2445,11 @@ input[type=text]::-ms-clear {
 }
 .tabs__container {
   margin-top: 15px;
+}
+.tabs__container_dispensary-details {
+  width: 570px;
+  margin: 0 auto;
+  padding: 50px 0 60px;
 }
 .tabs__list {
   list-style: none;
@@ -3600,6 +3701,19 @@ input[type=text]::-ms-clear {
 .share:after {
   clear: both;
 }
+.share_dispensary {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 35px;
+}
+.share_dispensary .share__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #343434;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 15px;
+}
 .share__header {
   margin-bottom: 8px;
 }
@@ -3658,6 +3772,110 @@ input[type=text]::-ms-clear {
   transition: none;
   opacity: 1;
 }
+.contact-info {
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  padding: 0 35px;
+}
+.contact-info__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #343434;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 15px;
+}
+.contact-info__inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.contact-info__contact-link {
+  color: #f0266a;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: opacity .2s;
+  outline: none;
+}
+.contact-info__contact-link:hover {
+  opacity: .7;
+}
+.contact-info__contact-link:active {
+  transition: none;
+  opacity: 1;
+}
+.contact-info__contact-method {
+  font-size: 14px;
+  text-align: center;
+  width: 40px;
+  display: inline-block;
+}
+.contact-info__icon {
+  fill: #f0266a;
+  outline: none;
+}
+.map {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.map__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #343434;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 15px;
+}
+.map__canvas {
+  position: relative;
+  width: 100%;
+  height: 265px;
+  border: 1px solid;
+}
+.timesheet {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.timesheet__title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #343434;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.timesheet__column {
+  width: 220px;
+  text-align: left;
+}
+.timesheet__row {
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.timesheet__key {
+  font-weight: bold;
+  font-size: 16px;
+}
+.timesheet__value {
+  font-size: 16px;
+  float: left;
+  text-align: right;
+}
 @media (min-width: 1366px) {
   .effects__item:nth-child(5n + 5) {
     margin-right: 0;
@@ -3677,6 +3895,12 @@ input[type=text]::-ms-clear {
     padding: 0 89px;
   }
   .product-details__description {
+    padding: 0 89px;
+  }
+  .dispensary-details_page {
+    padding: 0 89px;
+  }
+  .dispensary-details__description {
     padding: 0 89px;
   }
   .btn_print-receipt {
@@ -3851,6 +4075,19 @@ input[type=text]::-ms-clear {
   .product-details__description {
     padding: 0;
   }
+  .dispensary-details_page {
+    padding: 0;
+  }
+  .dispensary-details__description {
+    padding: 0;
+  }
+  .dispensary-details__timesheet {
+    display: block;
+  }
+  .dispensary-details__timesheet-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
   .reviews {
     padding: 0 10px;
   }
@@ -3920,6 +4157,18 @@ input[type=text]::-ms-clear {
     flex-direction: column;
   }
   .section__content {
+    padding: 0;
+  }
+  .tabs__container_dispensary-details {
+    width: 100%;
+  }
+  .contact-info {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  .share_dispensary {
+    width: 100%;
     padding: 0;
   }
 }
